@@ -1,0 +1,9 @@
+@import '/src/styles/styles.scss';
+
+
+// This ensures that Chrome does not add any whitespace to the edges of the page
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // not neccesary
+}
