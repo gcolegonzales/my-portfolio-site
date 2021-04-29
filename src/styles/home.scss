@@ -1,10 +1,7 @@
 @import './variables.scss';
 
 .Home {
-    height: 100%;
-    background-image: url("./images/placeholder_background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100vh;
     filter: grayscale(35%);
     display: flex;
     justify-content: center;
@@ -14,19 +11,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        padding-left: 2rem;
+        align-items: center;
+        height: 100%;
+        z-index: 1;
 
-        @media(min-width: 998px) {
-            padding-left: 0rem;
-            position: relative;
-            bottom: 4rem;
-            right: 8rem;
+        @media(min-width: 576px) {
+            padding-bottom: 4rem;
         }
 
         span.name {
             font-size: 3.7rem;
             color: $text-color-hover;
+            text-align: center;
         }
 
         .dynamo-text {
@@ -42,8 +38,7 @@
             .dynamo-content {
 
                 .Typewriter {
-                    
-                border-bottom: 3px solid yellow;
+                    border-bottom: 3px solid yellow;
                 }
             }
         }

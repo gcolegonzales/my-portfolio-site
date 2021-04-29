@@ -24,7 +24,7 @@ function Navbar() {
         </ul>
       </nav>
 
-      <nav id="side-nav">
+      {/* <nav id="side-nav">
         <div className="profile-area">
           <a href="https://www.linkedin.com/in/cole-gonzales-787975191/" rel="noreferrer" target="_blank">
             <img className="profile-img" src={profileImg} alt="Img of Me" />
@@ -53,7 +53,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </div>
   );
 }

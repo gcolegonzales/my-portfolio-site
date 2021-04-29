@@ -1,16 +1,18 @@
 .About {
     padding: 2rem;
     background-color: #ebebeb;
+    height: 100vh;
+    max-width: 100%;
 
     @media(min-width: 998px) {
-        padding: 5rem 9rem;
+        padding: 3.6rem 9rem;
     }
 
     .about-header {
         display: inline-block; 
         font-size: 1.4rem;
         color: #091f66;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         width: auto;
 
         h2 {
@@ -35,16 +37,19 @@
             padding-top: 1rem;
             
             @media(min-width: 750px) {
-                padding-top: 2rem;
+                padding-top: 1rem;
                 display: flex;
                 justify-content: space-between;
             }
 
-            img {
-                -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);
-                width: 100%;
+            .img-container {
                 max-width: 350px;
+                
+                img {
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    width: 100%;
+                }
             }
 
             .content {
@@ -53,14 +58,29 @@
 
                 @media(min-width: 750px) {
                     padding-top: 0rem;
+                    padding-left: 2rem;
                 }
 
-                h4 {
-                    font-size: 1.3rem;
+                h2 {
+                    font-size: 1.5rem;
                     line-height: 1;
+                    margin-bottom: 10px;
                 }
 
-                
+                .skills {
+                    padding-top: 1rem;
+
+                    ul {
+                        li {
+                            padding: .1rem 0rem;
+                            font-size: 1.1rem;
+
+                            .skill-time {
+                                color: #535353;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -68,4 +88,9 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: #091f66;
+}
+
+ul {
+    margin: 0rem;
+    list-style-type: none;
 }

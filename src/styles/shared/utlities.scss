@@ -5,3 +5,35 @@
     justify-content: center;
     align-items: center;
 }
+
+.progress {
+    background-color: #2f363f31;
+    border-radius: 13px;
+    padding: 2px;
+  
+    .progress-bar {
+        width: 40%;
+        height: 10px;
+        border-radius: 10px;
+
+            &.bar-orange {
+                background-color: orange;
+            }
+
+            &.bar-blue {
+                background-color: blue;
+            }
+
+            &.bar-red {
+                background-color: red;
+            }
+
+            &.bar-yellow {
+                background-color: yellow;
+            }
+
+            &.bar-green {
+                background-color: green;
+            }
+      }
+  }
